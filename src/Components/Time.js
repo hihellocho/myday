@@ -13,11 +13,17 @@ const Time = () => {
   },[]);
   return (
     <div className="time">
-      {time.toLocaleTimeString('en-US')}
+      {time.toLocaleTimeString('en-US',{
+        hour: '2-digit',
+        minute :'2-digit',
+        second : '2-digit',
+        hour24: true
+      })}
       {/* {time.toLocaleTimeString('ko-KR',{
         hour: '2-digit',
         minute :'2-digit',
-        hour12: false
+        second : '2-digit',
+        hour24: true
       })} */}
     </div>
   );

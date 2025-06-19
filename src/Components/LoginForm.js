@@ -12,13 +12,13 @@ const LoginForm = ({onLogin}) => {
     }
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>당신의 이름을 입력해 주세요</h2>
+    <form onSubmit={handleSubmit} className="loginform">
+      <h2>이름을 입력해 주세요</h2>
       <input type="text"
         value={user}
         onChange={(e)=>{setUser(e.target.value)}}
         />
-      <button type="submit">입장하기</button>
+      <button type="submit">LOGIN</button>
     </form>
   );
 };

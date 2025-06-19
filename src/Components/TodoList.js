@@ -6,8 +6,8 @@ const TodoList = ({todos, onDelete, onToggle}) => {
   }
 
   return (
-    <div>
-      <ul>
+    <div className="todolist">
+      <ul className="todolist-box">
         {todos.map((item)=>{
           return(
           <li key={item.id}>

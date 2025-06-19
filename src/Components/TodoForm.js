@@ -13,7 +13,7 @@ const TodoForm = ({onAdd}) => {
     }
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="todoform">
       <input
       type="text"
       value={task}
