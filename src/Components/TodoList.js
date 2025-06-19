@@ -2,7 +2,7 @@
 
 const TodoList = ({todos, onDelete, onToggle}) => {
   if(todos.length === 0){
-    return <p>할일이 없습니다</p>;
+    return <p className="p">할일이 없습니다</p>;
   }
 
   return (

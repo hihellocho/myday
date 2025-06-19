@@ -60,7 +60,7 @@ body {
   }
 }
 .mainpage {
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   .login-page {
     display: flex;
     justify-content: center;
@@ -84,7 +84,7 @@ body {
 .quote-box {
   word-break: keep-all;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  width: 100%;
+  padding: 1rem 0;
   .quote {
     padding: 1rem;
     font-weight: bolder;
@@ -99,6 +99,12 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 2rem;
   align-items: center;
+  height: 220px;
+  .p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    padding: 0.3rem;
+  }
   .todoform {
     padding: 1rem;
     display: flex;
@@ -127,27 +133,29 @@ body {
 .weather-box {
   font-size: clamp(0.8rem, 2vw, 1.2rem);
   .weather-txtWrap {
-    color:rgb(90, 105, 112);
+    color: rgb(90, 105, 112);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    margin: 5rem 0;
-    h3, img {
+    margin: 4rem 0;
+    h3,
+    img {
       padding: 0.5rem 2rem;
       word-break: keep-all;
     }
-
   }
 }
 .todolist {
   margin-left: 1rem;
   .todolist-box {
+    height: 150px;
+    overflow: auto;
     li {
       padding: 0.3rem;
       font-size: 1.2rem;
-      span{
+      span {
         padding: 0 1rem;
       }
       button {
