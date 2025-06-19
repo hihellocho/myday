@@ -4,6 +4,7 @@ import LoginForm from "./Components/LoginForm.js";
 import Time from "./Components/Time.js";
 import MainPage from "./Components/MainPage.js";
 import Weather from "./Components/Weather.js";
+import ImageRandom from "./Components/ImageRandom.js";
 
 // import bgImg from "./images/img-01.png";
 
@@ -28,7 +29,7 @@ const App = () => {
       {/* <img src="./images/img-02.jpeg" alt="이미지2"/> */}
       {/* <img src={`${process.env.PUBLIC_URL}/images/img-02.jpeg`} alt="이미지2" /> */}
       {/* <img src={bgImg} alt="이미지1" /> */}
-      {/* <ImageRandom /> */}
+      <ImageRandom />
       <Weather />
       <Time />
       {
